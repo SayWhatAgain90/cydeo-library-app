@@ -1,6 +1,6 @@
 Feature: User page columns verification
 
-@test
+@test @regression
   Scenario: Table column names
     Given user is on the login page
     When user logs in with username "librarian16@library" and password 'MnG7Xy72'
