@@ -100,6 +100,7 @@ public class Login_StepDefinitions {
 
     @Then("table should have following column names:")
     public void table_should_have_following_column_names(List<String> columnNames) {
+        BrowserUtils.sleep(2);
         BrowserUtils.waitForVisibilityOf(usersPage.usersPageButton);
         Assert.assertEquals(columnNames, BrowserUtils.getElementsText(usersPage.columnHeaders));
 
