@@ -50,6 +50,7 @@ public class Login_StepDefinitions {
 
     @Then("user should see the dashboard")
     public void use_should_see_the_dashboard() {
+
         BrowserUtils.waitForVisibilityOf(dashboardPage.dashboard);
         Assert.assertTrue(dashboardPage.dashboard.isDisplayed());
     }
@@ -99,7 +100,7 @@ public class Login_StepDefinitions {
 
     @Then("table should have following column names:")
     public void table_should_have_following_column_names(List<String> columnNames) {
-BrowserUtils.waitForVisibilityOf(usersPage.usersPageButton);
+        BrowserUtils.waitForVisibilityOf(usersPage.usersPageButton);
         Assert.assertEquals(columnNames, BrowserUtils.getElementsText(usersPage.columnHeaders));
 
     }
