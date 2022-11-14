@@ -1,10 +1,10 @@
 Feature: Log in with different usernames and passwords
-@wip
+@wip @regression
   Scenario Outline: Verify user information
     Given user is on the login page
     When I login using "<email>" and "<password>"
     Then account holder name should be "<name>"
-    @student
+    @students
     Examples:
       | name            | email             | password |
       | Test Student 10 | student10@library | F8u6OrI2 |
@@ -19,7 +19,7 @@ Feature: Log in with different usernames and passwords
       | Test Student 19 | student19@library | xDxywYeJ |
       | Test Student 20 | student20@library | nGdNzH1e |
 
-    @librarian
+    @librarians
     Examples:
       | name              | email               | password |
       | Test Librarian 10 | librarian10@library | ZIkOcbCa |
