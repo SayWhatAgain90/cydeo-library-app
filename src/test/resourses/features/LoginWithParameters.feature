@@ -10,13 +10,13 @@ Feature: Login with parameters
     And user click the sign in button
     Then user should see the dashboard
 
-  @librarian @regression
+  @librarian @regression @wip
   Scenario: Login as librarian 12
     When user enter username "librarian12@library"
     And user enter password 'wHhJQDSK'
     And user click the sign in button
     Then user should see the dashboard
-    And there should 1327 users
+    And there should 1382 users
 
   @student @regression
   Scenario: Login as student 14
@@ -31,8 +31,8 @@ Feature: Login with parameters
     And user enter password '9WB9sVtF'
     And user click the sign in button
     Then books should be displayed
-  @regression
+  @regression @wip
   Scenario: Login as librarian in the same line
     When user logs in with username "librarian16@library" and password 'MnG7Xy72'
     Then user should see the dashboard
-    And there should 1327 users
+    And there should 1382 users

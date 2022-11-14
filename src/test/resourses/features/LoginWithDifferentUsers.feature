@@ -1,5 +1,5 @@
 Feature: Log in with different usernames and passwords
-@wip @regression
+@regression
   Scenario Outline: Verify user information
     Given user is on the login page
     When I login using "<email>" and "<password>"

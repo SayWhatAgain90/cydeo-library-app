@@ -90,7 +90,7 @@ public class Login_StepDefinitions {
 
     @Then("there should {int} users")
     public void there_should_users(Integer int1) {
-        Assert.assertTrue(parseInt(dashboardPage.usersCounter.getText()) == int1);
+        Assert.assertEquals(parseInt(dashboardPage.usersCounter.getText()), (int) int1);
     }
 
     @When("user logs in with username {string} and password {string}")
